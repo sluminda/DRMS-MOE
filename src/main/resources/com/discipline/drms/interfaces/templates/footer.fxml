@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<HBox cache="true" maxHeight="50.0" maxWidth="1920" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #34495E;" xmlns="http://javafx.com/javafx/21" >
+   <Region prefHeight="50.0" prefWidth="400.0" />
+   <Label alignment="CENTER" prefHeight="50.0" prefWidth="760.0" text="© 2024 Data Management Branch, Ministry of Education" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="Open Sans Bold" size="14.0" />
+      </font>
+   </Label>
+   <Region prefHeight="50.0" prefWidth="400.0" />
+</HBox>

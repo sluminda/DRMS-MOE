@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane hgap="10.0" prefHeight="400.0" prefWidth="580.0" stylesheets="@../../../css/admin_panel/dashboard.css" vgap="10.0" xmlns="http://javafx.com/javafx/21">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="container">
+
+            <Label text="10">
+               <font>
+                  <Font name="Open Sans Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Admins">
+               <font>
+                  <Font name="Open Sans Italic" size="16.0" />
+               </font>
+            </Label>
+
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="1">
+
+            <Label text="10">
+               <font>
+                  <Font name="Open Sans Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="National Schools">
+               <font>
+                  <Font name="Open Sans Italic" size="16.0" />
+               </font>
+            </Label>
+
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="2">
+
+            <Label text="10">
+               <font>
+                  <Font name="Open Sans Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Teacher Colleges">
+               <font>
+                  <Font name="Open Sans Italic" size="16.0" />
+               </font>
+            </Label>
+
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="3">
+
+            <Label text="10">
+               <font>
+                  <Font name="Open Sans Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Investigation Officers">
+               <font>
+                  <Font name="Open Sans Italic" size="16.0" />
+               </font>
+            </Label>
+
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.rowIndex="1">
+
+            <Label text="10">
+               <font>
+                  <Font name="Open Sans Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Active Cases">
+               <font>
+                  <Font name="Open Sans Italic" size="16.0" />
+               </font>
+            </Label>
+
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="1" GridPane.rowIndex="1">
+
+            <Label text="10">
+               <font>
+                  <Font name="Open Sans Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Closed Cases">
+               <font>
+                  <Font name="Open Sans Italic" size="16.0" />
+               </font>
+            </Label>
+
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="2" GridPane.rowIndex="1">
+
+            <Label text="10">
+               <font>
+                  <Font name="Open Sans Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Total Users">
+               <font>
+                  <Font name="Open Sans Italic" size="16.0" />
+               </font>
+            </Label>
+
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="3" GridPane.rowIndex="1">
+
+            <Label text="10">
+               <font>
+                  <Font name="Open Sans Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Total Users">
+               <font>
+                  <Font name="Open Sans Italic" size="16.0" />
+               </font>
+            </Label>
+
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.rowIndex="2">
+
+            <Label text="10">
+               <font>
+                  <Font name="Open Sans Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Total Users">
+               <font>
+                  <Font name="Open Sans Italic" size="16.0" />
+               </font>
+            </Label>
+
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="1" GridPane.rowIndex="2">
+
+            <Label text="10">
+               <font>
+                  <Font name="Open Sans Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Total Users">
+               <font>
+                  <Font name="Open Sans Italic" size="16.0" />
+               </font>
+            </Label>
+
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="2" GridPane.rowIndex="2">
+
+            <Label text="10">
+               <font>
+                  <Font name="Open Sans Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Total Users">
+               <font>
+                  <Font name="Open Sans Italic" size="16.0" />
+               </font>
+            </Label>
+
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="container" GridPane.columnIndex="3" GridPane.rowIndex="2">
+
+            <Label text="10">
+               <font>
+                  <Font name="Open Sans Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label text="Total Users">
+               <font>
+                  <Font name="Open Sans Italic" size="16.0" />
+               </font>
+            </Label>
+
+      </VBox>
+
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</GridPane>

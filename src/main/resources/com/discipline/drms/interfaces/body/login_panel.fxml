@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox cache="true" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.discipline.drms.login.LoginController">
+   <Region cache="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D5D8DC;" />
+   <VBox cache="true">
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D5D8DC;" />
+      <AnchorPane prefHeight="600.0" prefWidth="495.0" style="-fx-background-color: #D5D8DC;">
+         <ImageView fitHeight="359.0" fitWidth="309.0" layoutX="15.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../images/windows/login/wallpaper.jpg" />
+         </ImageView>
+         <Label contentDisplay="CENTER" layoutX="60.0" layoutY="21.0" prefHeight="35.0" prefWidth="220.0" text="Welcome to DRMS" textAlignment="CENTER" wrapText="true">
+            <font>
+               <Font name="Open Sans Bold" size="24.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D5D8DC;" />
+   </VBox>
+   <Region cache="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D5D8DC;" />
+   <Region cache="true" prefHeight="200.0" prefWidth="200.0" />
+   <VBox cache="true">
+      <Region prefHeight="200.0" prefWidth="200.0" />
+      <AnchorPane prefHeight="500.0" prefWidth="445.0">
+         <TextField fx:id="user" layoutX="61.0" layoutY="124.0" maxWidth="200.0" prefHeight="28.0" prefWidth="200.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #D5D8DC;">
+            <font>
+               <Font name="Roboto" size="12.0" />
+            </font></TextField>
+         <PasswordField fx:id="password" layoutX="61.0" layoutY="169.0" maxWidth="200.0" prefHeight="28.0" prefWidth="200.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #D5D8DC;" />
+         <Label layoutX="111.0" layoutY="53.0" text="Login">
+            <font>
+               <Font name="Open Sans Bold" size="24.0" />
+            </font>
+         </Label>
+         <Button fx:id="login" layoutX="104.0" layoutY="252.0" onAction="#handleLogin" prefHeight="28.0" prefWidth="78.0" text="Login" />
+         <Hyperlink layoutX="65.0" layoutY="212.0" prefHeight="25.0" prefWidth="109.0" text="Forgot Password" />
+         <FontAwesomeIconView glyphName="USER" layoutX="28.0" layoutY="143.0" size="18" />
+         <FontAwesomeIconView glyphName="KEY" layoutX="28.0" layoutY="188.0" size="18" />
+      </AnchorPane>
+      <Region layoutX="10.0" layoutY="510.0" prefHeight="200.0" prefWidth="200.0" />
+   </VBox>
+   <Region cache="true" prefHeight="200.0" prefWidth="200.0" />
+</HBox>

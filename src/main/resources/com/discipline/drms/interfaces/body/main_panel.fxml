@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" stylesheets="@../../css/body/main_panel.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.discipline.drms.login.MainPanelController">
+
+        <VBox cache="true" prefHeight="200.0" prefWidth="100.0" spacing="10.0" HBox.hgrow="ALWAYS">
+
+                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="800.0" spacing="20.0" style="-fx-background-color: #5D6D7E; -fx-background-radius: 10;">
+
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+
+                                <Image url="@../../images/windows/main_panel/navigation.png" />
+
+                        </ImageView>
+                        <Label text="Main Page" textFill="WHITE">
+                            <font>
+                                <Font name="Roboto Bold" size="18.0" />
+                            </font>
+                        </Label>
+
+                    <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <TilePane fx:id="tilePane" alignment="TOP_CENTER" cache="true" hgap="10.0" prefTileHeight="120.0" prefTileWidth="170.0" style="-fx-background-color: #e6eaeb; -fx-background-radius: 10;" vgap="10.0" VBox.vgrow="ALWAYS">
+
+                        <VBox fx:id="dashboard" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="180.0" styleClass="container">
+
+                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+
+                                        <Image url="@../../images/windows/main_panel/dashboard-white.png" />
+
+                                </ImageView>
+                                <Label text="Dashboard">
+                                    <font>
+                                        <Font name="Roboto Bold" size="18.0" />
+                                    </font>
+                                </Label>
+
+                        </VBox>
+                        <VBox fx:id="dailyLetters" alignment="CENTER" cache="true" prefHeight="200.0" prefWidth="180.0" styleClass="container">
+
+                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+
+                                        <Image url="@../../images/windows/main_panel/letters-white.png" />
+
+                                </ImageView>
+                                <Label text="Daily Letters">
+                                    <font>
+                                        <Font name="Roboto Bold" size="18.0" />
+                                    </font>
+                                </Label>
+
+                        </VBox>
+                        <VBox fx:id="disciplinaryAction" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="180.0" styleClass="container">
+
+                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+
+                                        <Image url="@../../images/windows/main_panel/officer-white.png" />
+
+                                </ImageView>
+                                <Label prefWidth="152.0" text="Disciplinary Action">
+                                    <font>
+                                        <Font name="Roboto Bold" size="18.0" />
+                                    </font>
+                                </Label>
+
+                        </VBox>
+                        <VBox fx:id="tableView" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" styleClass="container">
+
+                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+
+                                        <Image url="@../../images/windows/main_panel/table-white.png" />
+
+                                </ImageView>
+                                <Label text="Table View">
+                                    <font>
+                                        <Font name="Roboto Bold" size="18.0" />
+                                    </font>
+                                </Label>
+
+                        </VBox>
+                        <VBox fx:id="reports" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="180.0" styleClass="container">
+
+                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+
+                                        <Image url="@../../images/windows/main_panel/report-white.png" />
+
+                                </ImageView>
+                                <Label text="Reports">
+                                    <font>
+                                        <Font name="Roboto Bold" size="18.0" />
+                                    </font>
+                                </Label>
+
+                        </VBox>
+                        <VBox fx:id="masterTables" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" styleClass="container">
+
+                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+
+                                        <Image url="@../../images/windows/main_panel/page-white.png" />
+
+                                </ImageView>
+                                <Label text="Master Tables">
+                                    <font>
+                                        <Font name="Roboto Bold" size="18.0" />
+                                    </font>
+                                </Label>
+
+                        </VBox>
+
+                    <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                    </padding>
+                </TilePane>
+
+            <HBox.margin>
+                <Insets bottom="10.0" />
+            </HBox.margin>
+        </VBox>
+
+</HBox>

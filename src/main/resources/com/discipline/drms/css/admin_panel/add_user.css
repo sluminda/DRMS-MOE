@@ -1,0 +1,44 @@
+/*{*/
+/*    -primary-color: #2A3E4C;  !* Dark Blue *!*/
+/*    -secondary-color: #DAE1E7;  !* Light Gray *!*/
+/*    -submit-button-color: #4A90E2;  !* Blue *!*/
+/*    -submit-button-hover-color: #357ABD;  !* Darker Blue *!*/
+/*    -clear-button-color: #D9534F;  !* Red *!*/
+/*    -clear-button-hover-color: #C9302C;  !* Darker Red *!*/
+/*    -container-color-1: #FFFFFF;  !* White *!*/
+/*    -container-color-2: #F7F9FB;  !* Very Light Gray *!*/
+/*    -container-color-3: #E1E8ED;  !* Light Gray *!*/
+/*    -border-color: #C5C9CC;  !* Gray *!*/
+/*    -text-color: #2A3E4C;  !* Dark Blue *!*/
+/*    -background-color: #F4F6F8;  !* Light Background Gray *!*/
+/*}*/
+
+
+.container{
+    -fx-padding: 20px;
+    -fx-spacing: 20px;
+}
+
+.vbox{
+    -fx-padding: 20px;
+    -fx-background-color: #E1E8ED;
+    -fx-background-radius: 10px;
+    -fx-spacing: 15px;
+}
+
+.hbox{
+    -fx-spacing: 10px;
+}
+
+.text-field{
+    -fx-background-color: #ffffff;
+    -fx-border-color: #565252;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-background-radius: 3px;
+    -fx-border-radius: 3px;
+}
+
+/*.button{*/
+/*    -fx-padding: 5px 10px;*/
+/*    -fx-background-color: transparent;*/
+/*}*/

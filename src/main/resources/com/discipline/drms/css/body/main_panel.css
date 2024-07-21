@@ -1,0 +1,23 @@
+.container{
+    -fx-background-color: #D5D8DC;
+    -fx-background-radius:10;
+    -fx-border-color:  #34495E;
+    -fx-border-radius:10;
+    -fx-spacing: 10;
+    -fx-cursor: hand;
+}
+
+.container:hover,
+.container:focused{
+-fx-background-color: #2C3E50;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+}
+
+.container:hover .label,
+.container:focused .label{
+    -fx-text-fill: white;
+}
+

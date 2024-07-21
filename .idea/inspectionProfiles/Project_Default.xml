@@ -1,0 +1,30 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CommentedOutCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="minLines" value="5" />
+    </inspection_tool>
+    <inspection_tool class="CssUnknownProperty" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myCustomPropertiesEnabled" value="true" />
+      <option name="myIgnoreVendorSpecificProperties" value="false" />
+      <option name="myCustomPropertiesList">
+        <value>
+          <list size="12">
+            <item index="0" class="java.lang.String" itemvalue="-primary-color" />
+            <item index="1" class="java.lang.String" itemvalue="-secondary-color" />
+            <item index="2" class="java.lang.String" itemvalue="-submit-button-color" />
+            <item index="3" class="java.lang.String" itemvalue="-submit-button-hover-color" />
+            <item index="4" class="java.lang.String" itemvalue="-clear-button-color" />
+            <item index="5" class="java.lang.String" itemvalue="-clear-button-hover-color" />
+            <item index="6" class="java.lang.String" itemvalue="-container-color-1" />
+            <item index="7" class="java.lang.String" itemvalue="-container-color-2" />
+            <item index="8" class="java.lang.String" itemvalue="-container-color-3" />
+            <item index="9" class="java.lang.String" itemvalue="-border-color" />
+            <item index="10" class="java.lang.String" itemvalue="-text-color" />
+            <item index="11" class="java.lang.String" itemvalue="-background-color" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

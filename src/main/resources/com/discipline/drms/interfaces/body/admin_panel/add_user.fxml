@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="580.0" styleClass="container" stylesheets="@../../../css/admin_panel/add_user.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="290.0" styleClass="vbox" HBox.hgrow="ALWAYS">
+         <children>
+            <VBox alignment="CENTER" maxHeight="50.0" prefHeight="50.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/windows/settings/info.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="User Informations">
+                           <font>
+                              <Font name="Roboto Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox alignment="TOP_CENTER" maxHeight="300.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" maxWidth="350.0" prefHeight="40.0" prefWidth="200.0" styleClass="hbox">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="85.0" text="Full Name" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Roboto" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField maxWidth="200.0" prefHeight="27.0" prefWidth="150.0" promptText="Full Name" styleClass="floating-label" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Roboto" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" maxWidth="350.0" prefHeight="40.0" prefWidth="200.0" styleClass="hbox">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="85.0" text="NIC No" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Roboto" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField maxWidth="200.0" prefHeight="27.0" prefWidth="150.0" promptText="NIC" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Roboto Bold" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" maxWidth="350.0" prefHeight="40.0" prefWidth="200.0" styleClass="hbox">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="85.0" text="Email Address" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Roboto" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField maxWidth="200.0" prefHeight="27.0" prefWidth="150.0" promptText="Email" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Roboto" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" maxWidth="350.0" prefHeight="40.0" prefWidth="200.0" styleClass="hbox">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="85.0" text="Phone No" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Roboto" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField maxWidth="200.0" prefHeight="27.0" prefWidth="150.0" promptText="Phone" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Roboto" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" maxWidth="350.0" prefHeight="40.0" prefWidth="200.0" styleClass="hbox">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="85.0" text="Expire Date" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Roboto" size="13.0" />
+                           </font>
+                        </Label>
+                        <DatePicker maxWidth="200.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="150.0" promptText="Expire Date" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="290.0" styleClass="vbox" HBox.hgrow="ALWAYS">
+         <children>
+            <VBox alignment="CENTER" maxHeight="50.0" prefHeight="50.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/windows/settings/privilage.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="User Privilages">
+                           <font>
+                              <Font name="Roboto Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox alignment="TOP_CENTER" maxHeight="300.0" maxWidth="250.0" prefWidth="300.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Accordion>
+                    <panes>
+                      <TitledPane animated="false" text="Modules">
+                           <content>
+                              <VBox alignment="CENTER" maxHeight="135.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                                 <children>
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                 </children>
+                              </VBox>
+                           </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Reports">
+                           <content>
+                              <VBox alignment="CENTER" maxHeight="135.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                                 <children>
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                 </children>
+                              </VBox>
+                           </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Master Records">
+                           <content>
+                              <VBox alignment="CENTER" maxHeight="135.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                                 <children>
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                 </children>
+                              </VBox>
+                           </content>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

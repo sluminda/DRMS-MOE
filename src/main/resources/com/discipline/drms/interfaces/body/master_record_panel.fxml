@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" stylesheets="@../../css/body/admin_panel.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.discipline.drms.master_records.MasterRecord">
+    <children>
+        <VBox alignment="CENTER" prefHeight="400.0" prefWidth="240.0" style="-fx-background-color: #BDC3C7;">
+            <children>
+                <HBox prefHeight="50.0" prefWidth="180.0" spacing="10.0">
+                    <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/windows/settings/user.png" />
+                            </image>
+                        </ImageView>
+                        <VBox prefHeight="200.0" prefWidth="90.0" spacing="5.0">
+                            <children>
+                                <Label prefHeight="24.0" prefWidth="112.0" style="-fx-text-alignment: center;" text="Username">
+                                    <font>
+                                        <Font name="Roboto Bold" size="16.0" />
+                                    </font>
+                                </Label>
+                                <Label prefHeight="24.0" prefWidth="112.0" style="-fx-text-alignment: center;" text="Role">
+                                    <font>
+                                        <Font name="Roboto Bold" size="16.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                    <padding>
+                        <Insets bottom="20.0" left="15.0" right="15.0" top="20.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <HBox onMouseClicked="#loadInstitute" prefHeight="30.0" prefWidth="200.0" spacing="20.0" styleClass="leftside">
+                            <children>
+                                <Label prefHeight="24.0" prefWidth="112.0" style="-fx-text-alignment: center;" text="Institute">
+                                    <font>
+                                        <Font name="Roboto Bold" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets top="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                        </HBox>
+                  <HBox onMouseClicked="#loadSubjectClerk" prefHeight="30.0" prefWidth="200.0" spacing="20.0" styleClass="leftside">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="112.0" style="-fx-text-alignment: center;" text="Subject Clerk">
+                           <font>
+                              <Font name="Roboto" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="3.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                        <HBox onMouseClicked="#loadDesignation" prefHeight="30.0" prefWidth="200.0" spacing="20.0" styleClass="leftside">
+                            <children>
+                                <Label prefHeight="24.0" prefWidth="112.0" style="-fx-text-alignment: center;" text="Designation">
+                                    <font>
+                                        <Font name="Roboto" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets top="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                        </HBox>
+                        <HBox onMouseClicked="#loadInvOfficer" prefHeight="30.0" prefWidth="200.0" spacing="20.0" styleClass="leftside">
+                            <children>
+                                <Label prefHeight="20.0" prefWidth="148.0" style="-fx-text-alignment: center;" text="Investigation Officer">
+                                    <font>
+                                        <Font name="Roboto" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets top="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                        </HBox>
+                        <HBox onMouseClicked="#loadFileLocation" prefHeight="30.0" prefWidth="200.0" spacing="20.0" styleClass="leftside">
+                            <children>
+                                <Label prefHeight="24.0" prefWidth="112.0" style="-fx-text-alignment: center;" text="File Location">
+                                    <font>
+                                        <Font name="Roboto" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets top="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                        </HBox>
+                        <HBox onMouseClicked="#loadCurrentInvStatus" prefHeight="30.0" prefWidth="200.0" spacing="20.0" styleClass="leftside">
+                            <children>
+                                <Label prefHeight="18.0" prefWidth="177.0" style="-fx-text-alignment: center;" text="Current Investigation Status">
+                                    <font>
+                                        <Font name="Roboto" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets top="3.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                        </HBox>
+                    </children>
+                    <padding>
+                        <Insets left="20.0" right="20.0" />
+                    </padding>
+                </VBox>
+            </children>
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </VBox>
+        <StackPane fx:id="masterRecord" HBox.hgrow="ALWAYS">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </StackPane>
+    </children>
+</HBox>

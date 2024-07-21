@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox cache="true" prefHeight="150.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21">
+
+      <MenuBar cache="true">
+
+          <Menu mnemonicParsing="false" text="File">
+
+              <MenuItem mnemonicParsing="false" text="Close" />
+
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+
+              <MenuItem mnemonicParsing="false" text="Delete" />
+
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+
+              <MenuItem mnemonicParsing="false" text="About" />
+
+          </Menu>
+
+      </MenuBar>
+      <HBox alignment="CENTER" cache="true" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="125.4" prefWidth="800.0" spacing="20.0" styleClass="container" stylesheets="@../../css/templates/header.css">
+
+            <VBox alignment="CENTER" maxWidth="1.7976931348623157E308">
+
+                  <ImageView fitHeight="140.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+
+                        <Image url="@../../images/templates/MOE_Logo.png" />
+
+                  </ImageView>
+
+            </VBox>
+            <Region prefHeight="150.0" prefWidth="150.0" HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="558.0" spacing="5.0">
+
+                  <Label text="Discipline Records Management System" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label text="DRMS Portal" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Region maxWidth="300.0" minWidth="200.0" prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: white;" VBox.vgrow="NEVER">
+                     <VBox.margin>
+                        <Insets left="70.0" right="70.0" />
+                     </VBox.margin>
+                  </Region>
+                  <Label text="Ministry of Education - Sri Lanka" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Bold" size="16.0" />
+                     </font>
+                  </Label>
+
+            </VBox>
+            <Region prefHeight="200.0" prefWidth="150.0" HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER" maxWidth="1.7976931348623157E308">
+
+                  <ImageView fitHeight="107.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+
+                        <Image url="@../../images/templates/RightSide_Icon.png" />
+
+                  </ImageView>
+
+            </VBox>
+
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </HBox>
+
+</VBox>

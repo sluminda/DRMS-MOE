@@ -1,20 +1,19 @@
 package com.discipline.drms.login;
 
+import com.discipline.drms.utils.sql.UserDAO;
+import com.discipline.drms.utils.AlertUtil;
+import com.discipline.drms.utils.User;
+import com.discipline.drms.utils.PasswordUtil;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.Parent;
-import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -31,6 +30,7 @@ public class LoginController {
     private Button login;
 
     private static final Logger LOGGER = Logger.getLogger(LoginController.class.getName());
+    private final UserDAO userDAO = new UserDAO();
 
     @FXML
     private void handleLogin() {
@@ -38,42 +38,21 @@ public class LoginController {
         String passwordText = password.getText();
 
         if (username.isEmpty() || passwordText.isEmpty()) {
-            showAlert("Validation Error", "Username or Password cannot be empty.");
+            AlertUtil.showAlert("Validation Error", "Username or Password cannot be empty.");
             return;
         }
 
-        String url = "jdbc:mysql://localhost:3306/drms";
-        String dbUser = "root";
-        String dbPassword = "1220";
-
-        try (Connection conn = DriverManager.getConnection(url, dbUser, dbPassword)) {
-            String sql = "SELECT * FROM users WHERE username = ?";
-            PreparedStatement stmt = conn.prepareStatement(sql);
-            stmt.setString(1, username);
-            ResultSet rs = stmt.executeQuery();
-
-            if (rs.next()) {
-                String storedHash = rs.getString("password_hash");
-                String salt = rs.getString("salt");
-                String role = rs.getString("role");
-
-                if (PasswordUtil.verifyPassword(passwordText, storedHash, salt) && isValidRole(role)) {
-                    loadMainPanel(role);
-                } else {
-                    showAlert("Login Failed", "Invalid username or password.");
-                }
+        try {
+            User user = userDAO.getUserByUsername(username);
+            if (user != null && PasswordUtil.verifyPassword(passwordText, user.getPasswordHash(), user.getSalt()) && user.isValidRole()) {
+                loadMainPanel(user.getRole());
             } else {
-                showAlert("Login Failed", "Invalid username or password.");
+                AlertUtil.showAlert("Login Failed", "Invalid username or password.");
             }
-
         } catch (SQLException | IOException e) {
             LOGGER.log(Level.SEVERE, "Login failed", e);
-            showAlert("Database Error", "An error occurred while connecting to the database.");
+            AlertUtil.showAlert("Database Error", "An error occurred while connecting to the database.");
         }
-    }
-
-    private boolean isValidRole(String role) {
-        return role.equals("Owner") || role.equals("Super Admin") || role.equals("Admin");
     }
 
     private void loadMainPanel(String role) throws IOException {
@@ -88,13 +67,5 @@ public class LoginController {
         Stage stage = (Stage) login.getScene().getWindow();
         BorderPane root = (BorderPane) stage.getScene().getRoot();
         root.setCenter(mainPanel);
-    }
-
-    private void showAlert(String title, String message) {
-        Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setTitle(title);
-        alert.setHeaderText(null);
-        alert.setContentText(message);
-        alert.showAndWait();
     }
 }

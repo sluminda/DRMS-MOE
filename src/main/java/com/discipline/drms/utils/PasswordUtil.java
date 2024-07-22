@@ -1,4 +1,4 @@
-package com.discipline.drms.login;
+package com.discipline.drms.utils;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.digest.DigestUtils;

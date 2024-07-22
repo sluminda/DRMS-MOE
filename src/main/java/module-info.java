@@ -25,4 +25,13 @@ module com.discipline.drms {
 
     exports com.discipline.drms.login;
     opens com.discipline.drms.login to javafx.fxml;
+
+    exports com.discipline.drms.province_panel;
+    opens com.discipline.drms.province_panel to javafx.fxml;
+
+    exports com.discipline.drms.utils;
+    opens com.discipline.drms.utils to javafx.fxml;
+
+    exports com.discipline.drms.utils.sql;
+    opens com.discipline.drms.utils.sql to javafx.fxml;
 }

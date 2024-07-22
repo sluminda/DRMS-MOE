@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" stylesheets="@../../css/body/main_panel.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" stylesheets="@../../../css/body/main_panel.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.discipline.drms.province_panel.Eastern">
 
     <VBox cache="true" prefHeight="200.0" prefWidth="100.0" spacing="10.0" HBox.hgrow="ALWAYS">
 
@@ -18,7 +18,7 @@
 
             <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
 
-                <Image url="@../../images/windows/table_views/table-white.png" />
+                <Image url="@../../../images/windows/table_views/table-white.png" />
 
             </ImageView>
             <Label fx:id="tableTitle" text="Table View" textFill="WHITE">
@@ -33,14 +33,16 @@
         </HBox>
       <VBox prefHeight="200.0" prefWidth="760.0" style="-fx-background-color: #e6eaeb; -fx-background-radius: 10;">
          <children>
-            <TableView prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
-<!--              <columns>-->
-<!--                <TableColumn prefWidth="75.0" text="C1" />-->
-<!--                <TableColumn prefWidth="75.0" text="C2" />-->
-<!--              </columns>-->
-<!--               <columnResizePolicy>-->
-<!--                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />-->
-<!--               </columnResizePolicy>-->
+             <TableView fx:id="employeeTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="idColumn" text="ID" />
+                    <TableColumn fx:id="firstNameColumn" text="First Name" />
+                    <TableColumn fx:id="lastNameColumn" text="Last Name" />
+                    <TableColumn fx:id="emailColumn" text="Email" />
+                </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
             </TableView>
          </children>
          <VBox.margin>

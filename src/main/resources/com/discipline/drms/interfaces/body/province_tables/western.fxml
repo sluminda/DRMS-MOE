@@ -29,7 +29,7 @@
                 <Image url="@../../../images/windows/table_views/table-white.png" />
 
             </ImageView>
-            <Label fx:id="tableTitle" text="Table View" textFill="WHITE">
+            <Label fx:id="tableTitle" text="Western province" textFill="WHITE">
                 <font>
                     <Font name="Roboto Bold" size="18.0" />
                 </font>

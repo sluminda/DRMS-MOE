@@ -34,4 +34,7 @@ module com.discipline.drms {
 
     exports com.discipline.drms.utils.sql;
     opens com.discipline.drms.utils.sql to javafx.fxml;
+
+    exports com.discipline.drms.daily_letters;
+    opens com.discipline.drms.daily_letters to javafx.fxml;
 }

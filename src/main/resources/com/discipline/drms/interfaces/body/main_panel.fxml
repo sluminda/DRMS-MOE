@@ -62,7 +62,7 @@
                                 </Label>
 
                         </VBox>
-                        <VBox fx:id="dailyLetters" alignment="CENTER" cache="true" prefHeight="200.0" prefWidth="180.0" styleClass="container">
+                        <VBox fx:id="dailyLetters" alignment="CENTER" cache="true" onMouseClicked="#pathToDailyLetters" prefHeight="200.0" prefWidth="180.0" styleClass="container">
 
                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
 
@@ -90,7 +90,7 @@
                                 </Label>
 
                         </VBox>
-                        <VBox fx:id="tableView" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" onMouseClicked="#pathToProvinces" prefHeight="200.0" prefWidth="100.0" styleClass="container">
+                        <VBox fx:id="mainView" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" onMouseClicked="#pathToProvinces" prefHeight="200.0" prefWidth="100.0" styleClass="container">
 
                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
 

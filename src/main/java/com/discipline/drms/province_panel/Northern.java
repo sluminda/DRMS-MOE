@@ -25,7 +25,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Objects;
 
-public class Eastern {
+public class Northern {
 
     private static final Logger logger = LoggerFactory.getLogger(Western.class);
 

@@ -18,26 +18,28 @@ public class MainPanelController {
     private VBox reports;
 
     @FXML
-    private VBox tableView;
+    private VBox mainView;
 
-
+//    @FXML
+//    private VBox dailyLetters;
 
     private String userRole;
-
 
     public void pathToProvinces() throws IOException {
         Parent provincesPanel = SceneCache.getScene("/com/discipline/drms/interfaces/body/provinces_panel.fxml");
         setCenterPanel(provincesPanel);
     }
 
+    public void pathToDailyLetters() throws IOException {
+        Parent dailyLettersPanel = SceneCache.getScene("/com/discipline/drms/interfaces/body/daily_letters.fxml");
+        setCenterPanel(dailyLettersPanel);
+    }
+
     private void setCenterPanel(Parent panel) {
-        Stage stage = (Stage) tableView.getScene().getWindow();
+        Stage stage = (Stage) mainView.getScene().getWindow();
         BorderPane root = (BorderPane) stage.getScene().getRoot();
         root.setCenter(panel);
     }
-
-
-
 
 
     public void setUserRole(String role) {

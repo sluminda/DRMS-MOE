@@ -49,7 +49,7 @@
                 </HBox>
                 <TilePane fx:id="tilePane" alignment="TOP_CENTER" cache="true" hgap="10.0" prefTileHeight="80.0" prefTileWidth="140.0" style="-fx-background-color: #e6eaeb; -fx-background-radius: 10;" vgap="10.0" VBox.vgrow="ALWAYS">
 
-                        <VBox fx:id="westernButton" onMouseClicked="#handleWesternClick" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
+                        <VBox fx:id="westernButton" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" onMouseClicked="#handleWesternClick" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
                                 <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="120.0" text="Western" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
                                     <font>
                                         <Font name="Roboto Bold" size="16.0" />
@@ -57,7 +57,7 @@
                                 </Label>
 
                         </VBox>
-         <VBox fx:id="southern" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
+         <VBox fx:id="southernButton" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" onMouseClicked="#handleSouthernClick" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
             <children>
                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="120.0" text="Southern" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
                   <font>
@@ -66,7 +66,7 @@
                </Label>
             </children>
          </VBox>
-         <VBox fx:id="eastern" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
+         <VBox fx:id="easternButton" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" onMouseClicked="#handleEasternClick" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
             <children>
                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="120.0" text="Eastern" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
                   <font>
@@ -75,7 +75,7 @@
                </Label>
             </children>
          </VBox>
-         <VBox fx:id="central" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
+         <VBox fx:id="centralButton" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" onMouseClicked="#handleCentralClick" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
             <children>
                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="120.0" text="Central" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
                   <font>
@@ -84,7 +84,7 @@
                </Label>
             </children>
          </VBox>
-         <VBox fx:id="northern" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
+         <VBox fx:id="northernButton" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" onMouseClicked="#handleNorthernClick" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
             <children>
                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="120.0" text="Northern" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
                   <font>
@@ -93,7 +93,7 @@
                </Label>
             </children>
          </VBox>
-         <VBox fx:id="northCentral" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
+         <VBox fx:id="northCentralButton" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" onMouseClicked="#handleNorthCentralClick" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
             <children>
                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="120.0" text="North Central" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
                   <font>
@@ -102,7 +102,7 @@
                </Label>
             </children>
          </VBox>
-         <VBox fx:id="sabaragamuwa" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
+         <VBox fx:id="sabaragamuwaButton" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" onMouseClicked="#handleSabaragamuwaClick" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
             <children>
                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="120.0" text="Sabaragamuwa" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
                   <font>
@@ -111,7 +111,7 @@
                </Label>
             </children>
          </VBox>
-         <VBox fx:id="northWestern" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
+         <VBox fx:id="northWesternButton" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" onMouseClicked="#handleNorthWesternClick" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
             <children>
                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="120.0" text="North Western" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
                   <font>
@@ -120,7 +120,7 @@
                </Label>
             </children>
          </VBox>
-         <VBox fx:id="uva" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
+         <VBox fx:id="uvaButton" alignment="CENTER" cache="true" maxHeight="1.7976931348623157E308" onMouseClicked="#handleUvaClick" prefHeight="200.0" prefWidth="180.0" styleClass="container" TilePane.alignment="CENTER">
             <children>
                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="120.0" text="Uva" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
                   <font>

@@ -2,8 +2,8 @@ package com.discipline.drms.province_panel;
 
 import com.discipline.drms.utils.KeyboardHandler;
 import com.discipline.drms.utils.SceneCache;
-import com.discipline.drms.utils.sql.Employee;
 import com.discipline.drms.utils.sql.DatabaseConnection;
+import com.discipline.drms.utils.sql.Employee;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -25,7 +25,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Objects;
 
-public class Eastern {
+public class NorthCentral {
 
     private static final Logger logger = LoggerFactory.getLogger(Western.class);
 

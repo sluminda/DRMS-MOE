@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" stylesheets="@../../../css/body/main_panel.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.discipline.drms.province_panel.Eastern">
+<HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" stylesheets="@../../../css/body/main_panel.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.discipline.drms.province_panel.Northern">
 
     <VBox cache="true" prefHeight="200.0" prefWidth="100.0" spacing="10.0" HBox.hgrow="ALWAYS">
 
@@ -28,7 +28,7 @@
                 <Image url="@../../../images/windows/table_views/table-white.png" />
 
             </ImageView>
-            <Label fx:id="tableTitle" text="Eastern Province" textFill="WHITE">
+            <Label fx:id="tableTitle" text="Northern Province" textFill="WHITE">
                 <font>
                     <Font name="Roboto Bold" size="18.0" />
                 </font>

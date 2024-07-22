@@ -2,14 +2,15 @@ package com.discipline.drms.province_panel;
 
 import com.discipline.drms.utils.KeyboardHandler;
 import com.discipline.drms.utils.SceneCache;
-import com.discipline.drms.utils.sql.Employee;
 import com.discipline.drms.utils.sql.DatabaseConnection;
+import com.discipline.drms.utils.sql.Employee;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
@@ -25,7 +26,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Objects;
 
-public class Eastern {
+public class Central {
 
     private static final Logger logger = LoggerFactory.getLogger(Western.class);
 

@@ -28,12 +28,45 @@ public class ProvincesPanel {
     private VBox westernButton;
 
     @FXML
+    private VBox easternButton;
+
+    @FXML
+    private VBox southernButton;
+
+    @FXML
+    private VBox centralButton;
+
+    @FXML
+    private VBox northCentralButton;
+
+    @FXML
+    private VBox northernButton;
+
+    @FXML
+    private VBox sabaragamuwaButton;
+
+    @FXML
+    private VBox northWesternButton;
+
+    @FXML
+    private VBox uvaButton;
+
+    @FXML
     public void initialize() {
         // Use the reusable KeyboardHandler to add a key event handler to the ImageView
         KeyboardHandler.addKeyHandler(toMainPanel, this::handleKeyPressed);
 
         // Add event handler for westernButton
         westernButton.setOnMouseClicked(this::handleWesternClick);
+        easternButton.setOnMouseClicked(this::handleEasternClick);
+        southernButton.setOnMouseClicked(this::handleSouthernClick);
+        centralButton.setOnMouseClicked(this::handleCentralClick);
+        northCentralButton.setOnMouseClicked(this::handleNorthCentralClick);
+        northernButton.setOnMouseClicked(this::handleNorthernClick);
+        sabaragamuwaButton.setOnMouseClicked(this::handleSabaragamuwaClick);
+        northWesternButton.setOnMouseClicked(this::handleNorthWesternClick);
+        uvaButton.setOnMouseClicked(this::handleUvaClick);
+
     }
 
     private void handleKeyPressed(KeyEvent event) {
@@ -57,10 +90,91 @@ public class ProvincesPanel {
         root.setCenter(panel);
     }
 
+//    Western Area
     public void handleWesternClick(MouseEvent event) {
         try {
             Parent westernPanel = SceneCache.getScene("/com/discipline/drms/interfaces/body/province_tables/western.fxml");
             setCenterPanel(westernPanel);
+        } catch (IOException e) {
+            logger.error("Failed to load Western panel", e);
+        }
+    }
+
+    //    Eastern Area
+    public void handleEasternClick(MouseEvent event) {
+        try {
+            Parent easternPanel = SceneCache.getScene("/com/discipline/drms/interfaces/body/province_tables/eastern.fxml");
+            setCenterPanel(easternPanel);
+        } catch (IOException e) {
+            logger.error("Failed to load Western panel", e);
+        }
+    }
+
+    //    Southern Area
+    public void handleSouthernClick(MouseEvent event) {
+        try {
+            Parent southernPanel = SceneCache.getScene("/com/discipline/drms/interfaces/body/province_tables/southern.fxml");
+            setCenterPanel(southernPanel);
+        } catch (IOException e) {
+            logger.error("Failed to load Western panel", e);
+        }
+    }
+
+    //    Central Area
+    public void handleCentralClick(MouseEvent event) {
+        try {
+            Parent centralPanel = SceneCache.getScene("/com/discipline/drms/interfaces/body/province_tables/central.fxml");
+            setCenterPanel(centralPanel);
+        } catch (IOException e) {
+            logger.error("Failed to load Western panel", e);
+        }
+    }
+
+    //    North Central Area
+    public void handleNorthCentralClick(MouseEvent event) {
+        try {
+            Parent northCentralPanel = SceneCache.getScene("/com/discipline/drms/interfaces/body/province_tables/northCentral.fxml");
+            setCenterPanel(northCentralPanel);
+        } catch (IOException e) {
+            logger.error("Failed to load Western panel", e);
+        }
+    }
+
+    //    Northern Area
+    public void handleNorthernClick(MouseEvent event) {
+        try {
+            Parent northernPanel = SceneCache.getScene("/com/discipline/drms/interfaces/body/province_tables/northern.fxml");
+            setCenterPanel(northernPanel);
+        } catch (IOException e) {
+            logger.error("Failed to load Western panel", e);
+        }
+    }
+
+    //    Sabaragamuwa Area
+    public void handleSabaragamuwaClick(MouseEvent event) {
+        try {
+            Parent sabaragamuwaPanel = SceneCache.getScene("/com/discipline/drms/interfaces/body/province_tables/sabaragamuwa.fxml");
+            setCenterPanel(sabaragamuwaPanel);
+        } catch (IOException e) {
+            logger.error("Failed to load Western panel", e);
+        }
+    }
+
+    //    North Western Area
+    public void handleNorthWesternClick(MouseEvent event) {
+        try {
+            Parent northWesternPanel = SceneCache.getScene("/com/discipline/drms/interfaces/body/province_tables/northWestern.fxml");
+            setCenterPanel(northWesternPanel);
+        } catch (IOException e) {
+            logger.error("Failed to load Western panel", e);
+        }
+    }
+
+    //    Uva Area
+    public void handleUvaClick(MouseEvent event) {
+        try {
+            Parent uvaPanel = SceneCache.getScene("/com/discipline/drms/interfaces/body/province_tables/uva.fxml");
+            setCenterPanel(uvaPanel);
         } catch (IOException e) {
             logger.error("Failed to load Western panel", e);
         }

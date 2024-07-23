@@ -41,7 +41,6 @@ public class MainPanelController {
         root.setCenter(panel);
     }
 
-
     public void setUserRole(String role) {
         this.userRole = role;
         adjustVisibility();

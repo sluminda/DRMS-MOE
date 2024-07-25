@@ -27,7 +27,7 @@ import java.util.Objects;
 
 public class Eastern {
 
-    private static final Logger logger = LoggerFactory.getLogger(Western.class);
+    private static final Logger logger = LoggerFactory.getLogger(Eastern.class);
 
     @FXML
     private ImageView toProvince;

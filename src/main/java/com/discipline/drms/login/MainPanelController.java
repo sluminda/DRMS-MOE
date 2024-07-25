@@ -35,6 +35,11 @@ public class MainPanelController {
         setCenterPanel(dailyLettersPanel);
     }
 
+    public void pathToMasterTables() throws IOException {
+        Parent dailyLettersPanel = SceneCache.getScene("/com/discipline/drms/interfaces/body/master_table_panel.fxml");
+        setCenterPanel(dailyLettersPanel);
+    }
+
     private void setCenterPanel(Parent panel) {
         Stage stage = (Stage) mainView.getScene().getWindow();
         BorderPane root = (BorderPane) stage.getScene().getRoot();

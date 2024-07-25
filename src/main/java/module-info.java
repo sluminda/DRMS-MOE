@@ -20,8 +20,8 @@ module com.discipline.drms {
     exports com.discipline.drms.admin_panel;
     opens com.discipline.drms.admin_panel to javafx.fxml;
 
-    exports com.discipline.drms.master_records;
-    opens com.discipline.drms.master_records to javafx.fxml;
+    exports com.discipline.drms.master_tables;
+    opens com.discipline.drms.master_tables to javafx.fxml;
 
     exports com.discipline.drms.login;
     opens com.discipline.drms.login to javafx.fxml;
@@ -37,4 +37,7 @@ module com.discipline.drms {
 
     exports com.discipline.drms.daily_letters;
     opens com.discipline.drms.daily_letters to javafx.fxml;
+
+    exports com.discipline.drms.master_tables.daily_letters;
+    opens com.discipline.drms.master_tables.daily_letters to javafx.fxml;
 }

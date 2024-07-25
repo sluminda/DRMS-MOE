@@ -27,7 +27,7 @@ import java.util.Objects;
 
 public class Uva {
 
-    private static final Logger logger = LoggerFactory.getLogger(Western.class);
+    private static final Logger logger = LoggerFactory.getLogger(Uva.class);
 
     @FXML
     private ImageView toProvince;

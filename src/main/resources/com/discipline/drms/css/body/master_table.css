@@ -1,0 +1,8 @@
+.text_label{
+    -fx-background-color: #ECF0F1;
+}
+
+.text_label:hover,
+.text_label:focused{
+    -fx-background-color: #D5D8DC;
+}

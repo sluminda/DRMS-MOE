@@ -1,3 +1,6 @@
+light gray :  #e6eaeb
+
+
 === Subject Clerk and User can be Linked ?
 === Special Note Length in Daily Letters
 === Letter File No vs FileRelToLetter

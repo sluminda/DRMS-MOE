@@ -72,7 +72,7 @@
                                              <Font name="Roboto" size="12.0" />
                                           </font>
                                        </Label>
-                                       <Label maxWidth="1.7976931348623157E308" prefWidth="182.0" styleClass="text_label" text="Subject Clerk" VBox.vgrow="ALWAYS">
+                                       <Label maxWidth="1.7976931348623157E308" onMouseClicked="#loadSubjectClerk" prefWidth="182.0" styleClass="text_label" text="Subject Clerk" VBox.vgrow="ALWAYS">
                                           <padding>
                                              <Insets bottom="10.0" left="30.0" top="10.0" />
                                           </padding>
@@ -80,7 +80,7 @@
                                              <Font name="Roboto" size="12.0" />
                                           </font>
                                        </Label>
-                                       <Label maxWidth="1.7976931348623157E308" prefWidth="182.0" styleClass="text_label" text="Action Taken" VBox.vgrow="ALWAYS">
+                                       <Label maxWidth="1.7976931348623157E308" onMouseClicked="#loadActionTaken" prefWidth="182.0" styleClass="text_label" text="Action Taken" VBox.vgrow="ALWAYS">
                                           <padding>
                                              <Insets bottom="10.0" left="30.0" top="10.0" />
                                           </padding>

@@ -37,6 +37,16 @@ public class MasterTablePanel {
         loadFXML("/com/discipline/drms/interfaces/body/master_tables/letter_type.fxml");
     }
 
+    @FXML
+    private void loadActionTaken() {
+        loadFXML("/com/discipline/drms/interfaces/body/master_tables/action_taken.fxml");
+    }
+
+    @FXML
+    private void loadSubjectClerk() {
+        loadFXML("/com/discipline/drms/interfaces/body/master_tables/subject_clerk.fxml");
+    }
+
 
     private void loadFXML(String fxmlFile) {
         Pane cachedPane = fxmlCache.get(fxmlFile);

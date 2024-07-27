@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
@@ -8,49 +8,106 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox cache="true" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.discipline.drms.login.LoginController">
-   <Region cache="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D5D8DC;" />
-   <VBox cache="true">
-      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D5D8DC;" />
-      <AnchorPane prefHeight="600.0" prefWidth="495.0" style="-fx-background-color: #D5D8DC;">
-         <ImageView fitHeight="359.0" fitWidth="309.0" layoutX="15.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
-            <Image url="@../../images/windows/login/wallpaper.jpg" />
-         </ImageView>
-         <Label contentDisplay="CENTER" layoutX="60.0" layoutY="21.0" prefHeight="35.0" prefWidth="220.0" text="Welcome to DRMS" textAlignment="CENTER" wrapText="true">
-            <font>
-               <Font name="Open Sans Bold" size="24.0" />
-            </font>
-         </Label>
-      </AnchorPane>
-      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D5D8DC;" />
-   </VBox>
-   <Region cache="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D5D8DC;" />
-   <Region cache="true" prefHeight="200.0" prefWidth="200.0" />
-   <VBox cache="true">
-      <Region prefHeight="200.0" prefWidth="200.0" />
-      <AnchorPane prefHeight="500.0" prefWidth="445.0">
-         <TextField fx:id="user" layoutX="61.0" layoutY="124.0" maxWidth="200.0" prefHeight="28.0" prefWidth="200.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #D5D8DC;">
-            <font>
-               <Font name="Roboto" size="12.0" />
-            </font></TextField>
-         <PasswordField fx:id="password" layoutX="61.0" layoutY="169.0" maxWidth="200.0" prefHeight="28.0" prefWidth="200.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #D5D8DC;" />
-         <Label layoutX="111.0" layoutY="53.0" text="Login">
-            <font>
-               <Font name="Open Sans Bold" size="24.0" />
-            </font>
-         </Label>
-         <Button fx:id="login" layoutX="104.0" layoutY="252.0" onAction="#handleLogin" prefHeight="28.0" prefWidth="78.0" text="Login" />
-         <Hyperlink layoutX="65.0" layoutY="212.0" prefHeight="25.0" prefWidth="109.0" text="Forgot Password" />
-         <FontAwesomeIconView glyphName="USER" layoutX="28.0" layoutY="143.0" size="18" />
-         <FontAwesomeIconView glyphName="KEY" layoutX="28.0" layoutY="188.0" size="18" />
-      </AnchorPane>
-      <Region layoutX="10.0" layoutY="510.0" prefHeight="200.0" prefWidth="200.0" />
-   </VBox>
-   <Region cache="true" prefHeight="200.0" prefWidth="200.0" />
+
+<HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.discipline.drms.login.LoginController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="380.0" prefWidth="385.0" style="-fx-background-color: #D5D8DC;" HBox.hgrow="ALWAYS">
+         <children>
+            <VBox maxHeight="350.0" maxWidth="350.0" spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="80.0" prefWidth="435.0">
+                     <children>
+                        <Label style="-fx-background-color: #34495E; -fx-background-radius: 10;" text="Welcome to DRMS" textFill="WHITE">
+                           <font>
+                              <Font name="Roboto Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" maxHeight="300.0" maxWidth="400.0" prefHeight="278.0" prefWidth="385.0">
+                     <children>
+                        <ImageView fitHeight="278.0" fitWidth="385.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                           <image>
+                              <Image url="@../../images/windows/login/Wallpaper-Low-Radius.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefWidth="385.0" style="-fx-background-color: #BDC3C7;" HBox.hgrow="ALWAYS">
+         <children>
+            <VBox alignment="CENTER" maxHeight="350.0" maxWidth="350.0" style="-fx-border-width: 2; -fx-border-color: #34495E; -fx-border-radius: 10;" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="70.0">
+                     <children>
+                        <Label style="-fx-background-color: #34495E; -fx-background-radius: 10;" text="Login Portal" textFill="WHITE">
+                           <font>
+                              <Font name="Roboto Bold" size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="180.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <HBox alignment="CENTER" spacing="20.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/windows/login/user.png" />
+                                 </image>
+                              </ImageView>
+                              <TextField fx:id="user" promptText="Username" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="20.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/windows/login/key.png" />
+                                 </image>
+                              </ImageView>
+                              <PasswordField fx:id="password" promptText="Password" />
+                           </children>
+                        </HBox>
+                        <Hyperlink text="Forget Password" />
+                        <Button fx:id="login" alignment="CENTER" defaultButton="true" minHeight="30.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="32.0" prefWidth="81.0" text="Login" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="Roboto" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
 </HBox>

@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="580.0" styleClass="container" stylesheets="@../../../css/admin_panel/add_user.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<HBox maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="580.0" styleClass="container" stylesheets="@../../../css/admin_panel/add_user.css" xmlns="http://javafx.com/javafx/21">
    <children>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="290.0" styleClass="vbox" HBox.hgrow="ALWAYS">
          <children>

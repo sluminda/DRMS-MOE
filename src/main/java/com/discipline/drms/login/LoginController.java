@@ -38,7 +38,7 @@ public class LoginController {
         String passwordText = password.getText();
 
         if (username.isEmpty() || passwordText.isEmpty()) {
-            AlertUtil.showAlert("Validation Error", "Username or Password cannot be empty.");
+            AlertUtil.showAlertError("Validation Error", "Username or Password cannot be empty.");
             return;
         }
 
@@ -47,11 +47,11 @@ public class LoginController {
             if (user != null && PasswordUtil.verifyPassword(passwordText, user.getPasswordHash(), user.getSalt()) && user.isValidRole()) {
                 loadMainPanel(user.getRole());
             } else {
-                AlertUtil.showAlert("Login Failed", "Invalid username or password.");
+                AlertUtil.showAlertError("Login Failed", "Invalid username or password.");
             }
         } catch (SQLException | IOException e) {
             LOGGER.log(Level.SEVERE, "Login failed", e);
-            AlertUtil.showAlert("Database Error", "An error occurred while connecting to the database.");
+            AlertUtil.showAlertError("Database Error", "An error occurred while connecting to the database.");
         }
     }
 

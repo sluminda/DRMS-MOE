@@ -1,5 +1,6 @@
 package com.discipline.drms.master_tables.daily_letters;
 
+import com.discipline.drms.utils.AlertUtil;
 import com.discipline.drms.utils.sql.DatabaseConnection;
 import com.discipline.drms.utils.sql.MasterTable;
 import javafx.collections.FXCollections;
@@ -7,11 +8,14 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
@@ -28,6 +32,12 @@ public class ActionTaken {
     @FXML
     private TableColumn<MasterTable, String> actionColumn;
 
+    @FXML
+    private TextField idField;
+
+    @FXML
+    private TextArea actionField;
+
     private final ObservableList<MasterTable> masterTableData = FXCollections.observableArrayList();
 
     @FXML
@@ -35,16 +45,26 @@ public class ActionTaken {
         idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
         actionColumn.setCellValueFactory(new PropertyValueFactory<>("action"));
 
+        actionTakenTable.setItems(masterTableData);
         loadActionTakenData();
+
+        // Add selection listener to TableView
+        actionTakenTable.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue != null) {
+                idField.setText(String.valueOf(newValue.getId()));
+                actionField.setText(newValue.getAction());
+            }
+        });
     }
 
     private void loadActionTakenData() {
         // Clear previous data
         masterTableData.clear();
 
-        try (Connection conn = DatabaseConnection.getConnection()) {
-            Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM actiontakens");
+        String query = "SELECT * FROM actiontakens";
+        try (Connection conn = DatabaseConnection.getConnection();
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(query)) {
 
             while (rs.next()) {
                 MasterTable masterTable = new MasterTable();
@@ -53,13 +73,78 @@ public class ActionTaken {
 
                 masterTableData.add(masterTable);
             }
-
-            actionTakenTable.setItems(masterTableData);
-
-            rs.close();
-            stmt.close();
         } catch (Exception e) {
-            logger.error("Failed to load employee data", e);
+            logger.error("Failed to load action taken data", e);
+        }
+    }
+
+    @FXML
+    private void handleAdd() {
+        String id = idField.getText();
+        String action = actionField.getText();
+
+        if (id.isEmpty() || action.isEmpty()) {
+            AlertUtil.showAlertError("Validation Error", "ID or Action cannot be empty");
+            return;
+        }
+
+        String sql = "INSERT INTO actiontakens (id, action) VALUES (?, ?)";
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setInt(1, Integer.parseInt(id));
+            pstmt.setString(2, action);
+            pstmt.executeUpdate();
+            loadActionTakenData();
+            AlertUtil.showAlertSuccess("Success", "Action Taken data added successfully");
+        } catch (Exception e) {
+            logger.error("Failed to add Action Taken data", e);
+            AlertUtil.showAlertError("Error", "Failed to add Action Taken data");
+        }
+    }
+
+    @FXML
+    private void handleUpdate() {
+        String id = idField.getText();
+        String action = actionField.getText();
+
+        if (id.isEmpty() || action.isEmpty()) {
+            AlertUtil.showAlertError("Validation Error", "ID or Action cannot be empty");
+            return;
+        }
+
+        String sql = "UPDATE actiontakens SET action = ? WHERE id = ?";
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, action);
+            pstmt.setInt(2, Integer.parseInt(id));
+            pstmt.executeUpdate();
+            loadActionTakenData();
+            AlertUtil.showAlertSuccess("Success", "Action Taken data updated successfully");
+        } catch (Exception e) {
+            logger.error("Failed to update Action Taken data", e);
+            AlertUtil.showAlertError("Error", "Failed to update Action Taken data");
+        }
+    }
+
+    @FXML
+    private void handleDelete() {
+        String id = idField.getText();
+
+        if (id.isEmpty()) {
+            AlertUtil.showAlertError("Validation Error", "ID cannot be empty");
+            return;
+        }
+
+        String sql = "DELETE FROM actiontakens WHERE id = ?";
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setInt(1, Integer.parseInt(id));
+            pstmt.executeUpdate();
+            loadActionTakenData();
+            AlertUtil.showAlertSuccess("Success", "Action Taken data deleted successfully");
+        } catch (Exception e) {
+            logger.error("Failed to delete Action Taken data", e);
+            AlertUtil.showAlertError("Error", "Failed to delete Action Taken data");
         }
     }
 }

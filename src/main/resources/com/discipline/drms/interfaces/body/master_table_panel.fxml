@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -54,144 +53,137 @@
          <Insets bottom="10.0" left="20.0" right="20.0" />
       </VBox.margin>
       <children>
-         <SplitPane dividerPositions="0.25" prefHeight="160.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
-           <items>
-               <Accordion stylesheets="@../../css/body/master_table.css" SplitPane.resizableWithParent="false">
-                 <panes>
-                   <TitledPane expanded="false" text="Daily Letters" wrapText="true">
+         <Accordion prefHeight="160.0" prefWidth="200.0" stylesheets="@../../css/body/master_table.css">
+           <panes>
+             <TitledPane expanded="false" text="Daily Letters" wrapText="true">
+                  <content>
+                     <ScrollPane fitToHeight="true" fitToWidth="true">
                         <content>
-                           <ScrollPane fitToHeight="true" fitToWidth="true">
-                              <content>
-                                 <VBox prefHeight="200.0" prefWidth="100.0">
-                                    <children>
-                                       <Label maxWidth="1.7976931348623157E308" onMouseClicked="#loadLetterType" prefWidth="182.0" styleClass="text_label" text="Letter Type" VBox.vgrow="ALWAYS">
-                                          <padding>
-                                             <Insets bottom="10.0" left="30.0" top="10.0" />
-                                          </padding>
-                                          <font>
-                                             <Font name="Roboto" size="12.0" />
-                                          </font>
-                                       </Label>
-                                       <Label maxWidth="1.7976931348623157E308" onMouseClicked="#loadSubjectClerk" prefWidth="182.0" styleClass="text_label" text="Subject Clerk" VBox.vgrow="ALWAYS">
-                                          <padding>
-                                             <Insets bottom="10.0" left="30.0" top="10.0" />
-                                          </padding>
-                                          <font>
-                                             <Font name="Roboto" size="12.0" />
-                                          </font>
-                                       </Label>
-                                       <Label maxWidth="1.7976931348623157E308" onMouseClicked="#loadActionTaken" prefWidth="182.0" styleClass="text_label" text="Action Taken" VBox.vgrow="ALWAYS">
-                                          <padding>
-                                             <Insets bottom="10.0" left="30.0" top="10.0" />
-                                          </padding>
-                                          <font>
-                                             <Font name="Roboto" size="12.0" />
-                                          </font>
-                                       </Label>
-                                    </children>
+                           <VBox prefHeight="200.0" prefWidth="100.0">
+                              <children>
+                                 <Label maxWidth="1.7976931348623157E308" onMouseClicked="#loadLetterType" prefWidth="182.0" styleClass="text_label" text="Letter Type" VBox.vgrow="ALWAYS">
                                     <padding>
-                                       <Insets bottom="10.0" top="10.0" />
+                                       <Insets bottom="10.0" left="30.0" top="10.0" />
                                     </padding>
-                                 </VBox>
-                              </content>
-                           </ScrollPane>
+                                    <font>
+                                       <Font name="Roboto" size="12.0" />
+                                    </font>
+                                 </Label>
+                                 <Label maxWidth="1.7976931348623157E308" onMouseClicked="#loadSubjectClerk" prefWidth="182.0" styleClass="text_label" text="Subject Clerk" VBox.vgrow="ALWAYS">
+                                    <padding>
+                                       <Insets bottom="10.0" left="30.0" top="10.0" />
+                                    </padding>
+                                    <font>
+                                       <Font name="Roboto" size="12.0" />
+                                    </font>
+                                 </Label>
+                                 <Label maxWidth="1.7976931348623157E308" onMouseClicked="#loadActionTaken" prefWidth="182.0" styleClass="text_label" text="Action Taken" VBox.vgrow="ALWAYS">
+                                    <padding>
+                                       <Insets bottom="10.0" left="30.0" top="10.0" />
+                                    </padding>
+                                    <font>
+                                       <Font name="Roboto" size="12.0" />
+                                    </font>
+                                 </Label>
+                              </children>
+                              <padding>
+                                 <Insets bottom="10.0" top="10.0" />
+                              </padding>
+                           </VBox>
                         </content>
-                        <font>
-                           <Font name="Roboto Bold" size="13.0" />
-                        </font>
-                     </TitledPane>
-                   <TitledPane text="Disciplinary Action">
-                        <font>
-                           <Font name="Roboto Bold" size="13.0" />
-                        </font>
+                     </ScrollPane>
+                  </content>
+                  <font>
+                     <Font name="Roboto Bold" size="12.0" />
+                  </font>
+               </TitledPane>
+             <TitledPane text="Disciplinary Action">
+                  <font>
+                     <Font name="Roboto Bold" size="12.0" />
+                  </font>
+                  <content>
+                     <ScrollPane fitToHeight="true" fitToWidth="true">
                         <content>
-                           <ScrollPane fitToHeight="true" fitToWidth="true">
-                              <content>
-                                 <VBox prefHeight="200.0" prefWidth="100.0">
-                                    <children>
-                                       <Label maxWidth="1.7976931348623157E308" prefWidth="182.0" styleClass="text_label" text="Letter Type" VBox.vgrow="ALWAYS">
-                                          <padding>
-                                             <Insets bottom="10.0" left="30.0" top="10.0" />
-                                          </padding>
-                                          <font>
-                                             <Font name="Roboto" size="12.0" />
-                                          </font>
-                                       </Label>
-                                       <Label maxWidth="1.7976931348623157E308" prefWidth="182.0" styleClass="text_label" text="Subject Clerk" VBox.vgrow="ALWAYS">
-                                          <padding>
-                                             <Insets bottom="10.0" left="30.0" top="10.0" />
-                                          </padding>
-                                          <font>
-                                             <Font name="Roboto" size="12.0" />
-                                          </font>
-                                       </Label>
-                                       <Label maxWidth="1.7976931348623157E308" prefWidth="182.0" styleClass="text_label" text="Action Taken" VBox.vgrow="ALWAYS">
-                                          <padding>
-                                             <Insets bottom="10.0" left="30.0" top="10.0" />
-                                          </padding>
-                                          <font>
-                                             <Font name="Roboto" size="12.0" />
-                                          </font>
-                                       </Label>
-                                    </children>
+                           <VBox prefHeight="200.0" prefWidth="100.0">
+                              <children>
+                                 <Label maxWidth="1.7976931348623157E308" prefWidth="182.0" styleClass="text_label" text="Letter Type" VBox.vgrow="ALWAYS">
                                     <padding>
-                                       <Insets bottom="20.0" top="10.0" />
+                                       <Insets bottom="10.0" left="30.0" top="10.0" />
                                     </padding>
-                                 </VBox>
-                              </content>
-                           </ScrollPane>
+                                    <font>
+                                       <Font name="Roboto" size="12.0" />
+                                    </font>
+                                 </Label>
+                                 <Label maxWidth="1.7976931348623157E308" prefWidth="182.0" styleClass="text_label" text="Subject Clerk" VBox.vgrow="ALWAYS">
+                                    <padding>
+                                       <Insets bottom="10.0" left="30.0" top="10.0" />
+                                    </padding>
+                                    <font>
+                                       <Font name="Roboto" size="12.0" />
+                                    </font>
+                                 </Label>
+                                 <Label maxWidth="1.7976931348623157E308" prefWidth="182.0" styleClass="text_label" text="Action Taken" VBox.vgrow="ALWAYS">
+                                    <padding>
+                                       <Insets bottom="10.0" left="30.0" top="10.0" />
+                                    </padding>
+                                    <font>
+                                       <Font name="Roboto" size="12.0" />
+                                    </font>
+                                 </Label>
+                              </children>
+                              <padding>
+                                 <Insets bottom="20.0" top="10.0" />
+                              </padding>
+                           </VBox>
                         </content>
-                     </TitledPane>
-                     <TitledPane text="Chart Sheet">
-                        <font>
-                           <Font name="Roboto Bold" size="13.0" />
-                        </font>
+                     </ScrollPane>
+                  </content>
+               </TitledPane>
+               <TitledPane text="Chart Sheet">
+                  <font>
+                     <Font name="Roboto Bold" size="12.0" />
+                  </font>
+                  <content>
+                     <ScrollPane fitToHeight="true" fitToWidth="true">
                         <content>
-                           <ScrollPane fitToHeight="true" fitToWidth="true">
-                              <content>
-                                 <VBox prefHeight="200.0" prefWidth="100.0">
-                                    <children>
-                                       <Label maxWidth="1.7976931348623157E308" prefWidth="182.0" styleClass="text_label" text="Letter Type" VBox.vgrow="ALWAYS">
-                                          <padding>
-                                             <Insets bottom="10.0" left="30.0" top="10.0" />
-                                          </padding>
-                                          <font>
-                                             <Font name="Roboto" size="12.0" />
-                                          </font>
-                                       </Label>
-                                       <Label maxWidth="1.7976931348623157E308" prefWidth="182.0" styleClass="text_label" text="Subject Clerk" VBox.vgrow="ALWAYS">
-                                          <padding>
-                                             <Insets bottom="10.0" left="30.0" top="10.0" />
-                                          </padding>
-                                          <font>
-                                             <Font name="Roboto" size="12.0" />
-                                          </font>
-                                       </Label>
-                                       <Label maxWidth="1.7976931348623157E308" prefWidth="182.0" styleClass="text_label" text="Action Taken" VBox.vgrow="ALWAYS">
-                                          <padding>
-                                             <Insets bottom="10.0" left="30.0" top="10.0" />
-                                          </padding>
-                                          <font>
-                                             <Font name="Roboto" size="12.0" />
-                                          </font>
-                                       </Label>
-                                    </children>
+                           <VBox prefHeight="200.0" prefWidth="100.0">
+                              <children>
+                                 <Label maxWidth="1.7976931348623157E308" prefWidth="182.0" styleClass="text_label" text="Letter Type" VBox.vgrow="ALWAYS">
                                     <padding>
-                                       <Insets bottom="20.0" top="10.0" />
+                                       <Insets bottom="10.0" left="30.0" top="10.0" />
                                     </padding>
-                                 </VBox>
-                              </content>
-                           </ScrollPane>
+                                    <font>
+                                       <Font name="Roboto" size="12.0" />
+                                    </font>
+                                 </Label>
+                                 <Label maxWidth="1.7976931348623157E308" prefWidth="182.0" styleClass="text_label" text="Subject Clerk" VBox.vgrow="ALWAYS">
+                                    <padding>
+                                       <Insets bottom="10.0" left="30.0" top="10.0" />
+                                    </padding>
+                                    <font>
+                                       <Font name="Roboto" size="12.0" />
+                                    </font>
+                                 </Label>
+                                 <Label maxWidth="1.7976931348623157E308" prefWidth="182.0" styleClass="text_label" text="Action Taken" VBox.vgrow="ALWAYS">
+                                    <padding>
+                                       <Insets bottom="10.0" left="30.0" top="10.0" />
+                                    </padding>
+                                    <font>
+                                       <Font name="Roboto" size="12.0" />
+                                    </font>
+                                 </Label>
+                              </children>
+                              <padding>
+                                 <Insets bottom="20.0" top="10.0" />
+                              </padding>
+                           </VBox>
                         </content>
-                     </TitledPane>
-                 </panes>
-               </Accordion>
-               <StackPane fx:id="masterTablePanel" prefHeight="150.0" prefWidth="550.0">
-                  <padding>
-                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                  </padding></StackPane>
-           </items>
-         </SplitPane>
+                     </ScrollPane>
+                  </content>
+               </TitledPane>
+           </panes>
+         </Accordion>
+         <StackPane fx:id="masterTablePanel" prefHeight="150.0" prefWidth="550.0" HBox.hgrow="ALWAYS" />
       </children>
       <padding>
          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />

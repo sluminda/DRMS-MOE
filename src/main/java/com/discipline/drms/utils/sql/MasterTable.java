@@ -6,20 +6,20 @@ public class MasterTable {
     private String Name;
     private String Action;
 
-    // Getters and setters for each field
-    public void setId(int id) {
-        this.id = id;
-    }
     public int getId() {
         return id;
     }
 
-    public void setType(String Type) {
-        this.Type = Type;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getType() {
         return Type;
+    }
+
+    public void setType(String type) {
+        Type = type;
     }
 
     public String getName() {
@@ -38,3 +38,4 @@ public class MasterTable {
         Action = action;
     }
 }
+

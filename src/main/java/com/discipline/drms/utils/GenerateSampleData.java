@@ -1,6 +1,5 @@
-package com.discipline.drms.login;
+package com.discipline.drms.utils;
 
-import com.discipline.drms.utils.PasswordUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,11 +27,9 @@ public class GenerateSampleData {
 
         try (Connection conn = DriverManager.getConnection(url, user, dbPassword)) {
             insertUser(conn, "lumi", "lumi", "Owner");
-            insertUser(conn, "ownerUser2", "ownerPass2", "Owner");
             insertUser(conn, "sanda", "sanda", "Super Admin");
-            insertUser(conn, "superAdminUser2", "superAdminPass2", "Super Admin");
-            insertUser(conn, "sara", "sara", "Admin");
-            insertUser(conn, "adminUser2", "adminPass2", "Admin");
+            insertUser(conn, "Rashmi", "rashmi", "Admin");
+
         } catch (SQLException e) {
             logger.error("Database connection error", e);
             throw e;
